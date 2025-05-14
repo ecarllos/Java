@@ -16,5 +16,13 @@ public class Main {
         } else {
             System.out.println("Não pode dirigir");
         }
+
+        int[] numeros = {10, 20, 30};
+
+        // Imprimindo os valores do array
+        System.out.println("Valores no array:");
+        System.out.println(numeros[0]);
+        System.out.println(numeros[1]);
+        System.out.println(numeros[2]);
     }
 }
