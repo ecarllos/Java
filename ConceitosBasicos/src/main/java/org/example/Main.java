@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Declarando a variável 'num'
-        int num = 17;
+        int num = 1_000_000;
 
         // Imprimindo a soma de num + 2
         System.out.println(num + 2);
@@ -24,5 +24,7 @@ public class Main {
         System.out.println(numeros[0]);
         System.out.println(numeros[1]);
         System.out.println(numeros[2]);
+
+        
     }
 }
