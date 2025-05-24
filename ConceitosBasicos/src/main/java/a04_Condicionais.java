@@ -50,7 +50,7 @@ public class a04_Condicionais {
 
 
 
-
+        /*
         int n = scanner.nextInt();
         if (n == 0){
             System.out.println("Zero");
@@ -58,6 +58,17 @@ public class a04_Condicionais {
             System.out.println("Positive");
         } else {
             System.out.println("Negative");
-        }
+        }*/
+
+
+
+
+        // OPERADORES TERNÁRIOS
+
+        //DIGA SE UM NÚMERO É PAR OU ÍMPAR
+        int n = scanner.nextInt();
+        //String valor = (n % 2 == 0 ? "Esse número é par" : "Esse número é ímpar");
+
+        System.out.println(n % 2 == 0 ? "Esse número é par" : "Esse número é ímpar");
     }
 }
