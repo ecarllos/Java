@@ -22,7 +22,7 @@ public class a05_LacosRepeticao {
         A primeira linha da entrada é o número de elementos na sequência; as próximas linhas são os próprios elementos.
         É garantido que sempre há um número divisível por 6 na sequência. */
 
-        int QntdDeNum = scanner.nextInt();
+        /*int QntdDeNum = scanner.nextInt();
         int soma = 0;
 
         for (int i = 0; i < QntdDeNum; i++){
@@ -33,6 +33,25 @@ public class a05_LacosRepeticao {
             }
         }
 
+        System.out.println(soma);*/
+
+
+        // ------------------
+
+
+        /*Escreva um programa que imprima o produto de todos os números inteiros de a a b ( a < b ).
+        Inclua a e exclua b do produto.
+        Por exemplo, se a = 2 e b = 5, então a resposta é 2*3*4=24.*/
+
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int soma = 1;
+
+        for (; a<b; a++){
+            soma *= a;
+        }
+
         System.out.println(soma);
+
     }
 }
