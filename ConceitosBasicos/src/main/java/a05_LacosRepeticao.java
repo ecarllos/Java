@@ -4,6 +4,8 @@ public class a05_LacosRepeticao {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // ---------------------------  FOR  ---------------------------
+
         // FAÇA A SOMA ENTRE O INTERVALO DE 2 NÚMEROS QUE O USUÁRIO DIGITAR
         /*
         int a = scanner.nextInt();
@@ -43,6 +45,7 @@ public class a05_LacosRepeticao {
         Inclua a e exclua b do produto.
         Por exemplo, se a = 2 e b = 5, então a resposta é 2*3*4=24.*/
 
+        /*
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int soma = 1;
@@ -52,6 +55,18 @@ public class a05_LacosRepeticao {
         }
 
         System.out.println(soma);
+        */
 
+
+
+        // ---------------------------  WHILE  ---------------------------
+
+        // Faça um programa que escreva os números que o usuário digitar na tela até ele digitar o número 7
+        int n;
+
+        do {
+            n = scanner.nextInt();
+            System.out.println(n);
+        } while (n != 7);
     }
 }
