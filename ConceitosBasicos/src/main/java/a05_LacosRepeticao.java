@@ -62,11 +62,44 @@ public class a05_LacosRepeticao {
         // ---------------------------  WHILE  ---------------------------
 
         // Faça um programa que escreva os números que o usuário digitar na tela até ele digitar o número 7
+        /*
         int n;
 
         do {
             n = scanner.nextInt();
             System.out.println(n);
         } while (n != 7);
+        */
+
+         // Escreva uma função que some todos os números que o usuário digitar até ele digitar um número que não seja int
+        /*
+        int soma = 0;
+
+        while (scanner.hasNextInt()){
+            int num = scanner.nextInt();
+            soma += num;
+        }
+
+        System.out.println(soma);*/
+
+
+        //Escreva um programa Java que leia uma sequência de leituras de temperatura em graus Celsius
+        // até que uma leitura de 100 graus ou mais seja encontrada. Seu programa deve gerar a leitura
+        // de temperatura mais alta observada até aquele ponto. Você deve considerar a entrada como uma
+        // sequência de valores inteiros de temperatura e imprimir o maior valor antes da condição de parada.
+
+        int maxTemperature = 0; // Initialize maximum temperature observed
+        int num = 0;
+
+        // Add your while loop or do-while loop here to process input temperatures
+        while (maxTemperature<100){
+            int temp = scanner.nextInt();
+
+
+            maxTemperature = temp;
+        }
+
+        // After exiting the loop, print the highest temperature
+        System.out.println(maxTemperature);
     }
 }
