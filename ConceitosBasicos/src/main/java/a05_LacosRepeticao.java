@@ -116,7 +116,7 @@ public class a05_LacosRepeticao {
         cada número inteiro é escrito em uma linha separada. A sequência termina com um número inteiro 0;
         quando o programa lê 0, ele deve encerrar seu trabalho e gerar o comprimento da sequência (sem contar o 0 final).*/
 
-        int cont = 0;
+        /*int cont = 0;
         int n;
         int c = 0;
 
@@ -130,6 +130,27 @@ public class a05_LacosRepeticao {
         } while (n != 0);
 
         // System.out.println(cont-1);
-        System.out.println(c);
+        System.out.println(c);*/
+
+
+        // Faça 2 pirâmides de números uma com a base pra baixo e a outra com a base para cima
+      
+      /*for (int j = 1; j < 10 ;j++){
+        for (int i = 1; i < j; i++){
+          System.out.print(i);
+        }
+        System.out.println(j);
+      }*/
+      
+      
+      for(int j = 9; j>0; j--){
+        
+        for(int i = 1; i<j; i++){
+          System.out.print(i);
+        }
+        System.out.println(j);
+      }
+  }
+}
     }
 }
