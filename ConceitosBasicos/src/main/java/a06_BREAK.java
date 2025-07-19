@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class a06_BREAK {
     public static void main(String[] args) {
@@ -19,8 +19,14 @@ public class a06_BREAK {
         // -------------------------------------------------
 
 
-        // digite apeas os números pares usando o CONINUE
+        // digite apeas os números pares de 1 a 10 usando o CONINUE
 
-        Scanner
+        for(int i = 0; i<10; i++){
+
+            if (i % 2 != 0){
+                continue;
+            }
+            System.out.println(i);
+        }
     }
 }
