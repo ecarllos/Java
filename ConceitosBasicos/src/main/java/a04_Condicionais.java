@@ -9,7 +9,7 @@ public class a04_Condicionais {
 
         int c = scanner.nextInt(); A variável "c" simboliza (Começo)
         int f = scanner.nextInt(); A variável "f" simboliza (Final)
-        int t = scanner.nextInt(); A variável "a" simboliza (Total)
+        int t = scanner.nextInt(); A variável "t" simboliza (Total)
 
         if (c <= f && t >= c && t <= f){
             System.out.println("Normal");
