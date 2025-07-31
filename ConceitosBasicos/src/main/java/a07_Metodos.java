@@ -3,16 +3,21 @@ import java.util.Scanner;
 public class a07_Metodos {
     // Faça uma calculadora utilizando métodos em Java
     public static void main(String[] args) {
+
+
+        mostrarCalculadora();
+
+    }
+    public static void mostrarCalculadora(){
         Scanner scanner = new Scanner(System.in);
 
         // Quiz
-        System.out.println("*********************");
+        System.out.println("******** CALCULADORA ********");
         System.out.println("Digite a operação que você quer fazer:");
         System.out.println("[1] Adição");
         System.out.println("[2] Subtração");
         System.out.println("[3] Multiplicação");
         System.out.println("[4] Divisão");
-        System.out.println("*********************");
         System.out.println("");
 
         System.out.print("Digite sua resposta: ");
@@ -37,6 +42,7 @@ public class a07_Metodos {
             System.out.println("A Divisão desses números é igual a " + div);
         }
     }
+
     public static int Somar(int a, int b){
         return a + b;
     }
