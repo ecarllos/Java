@@ -20,7 +20,7 @@ public class a07_Metodos {
         System.out.println("");
 
         // Validação para o usuário não digitar algum número errado
-        for (boolean i = false; operacao < 0 || operacao > 5;){
+        for (boolean i = false; operacao <= 0 || operacao >= 5;){
 
             System.out.println("Digite um número de 1 a 5!!");
 
