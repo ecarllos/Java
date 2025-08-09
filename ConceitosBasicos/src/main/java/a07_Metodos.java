@@ -3,12 +3,6 @@ import java.util.Scanner;
 public class a07_Metodos {
     // Faça uma calculadora utilizando métodos em Java
     public static void main(String[] args) {
-
-
-        mostrarCalculadora();
-
-    }
-    public static void mostrarCalculadora(){
         Scanner scanner = new Scanner(System.in);
 
         // Quiz
@@ -18,61 +12,84 @@ public class a07_Metodos {
         System.out.println("[2] Subtração");
         System.out.println("[3] Multiplicação");
         System.out.println("[4] Divisão");
+        System.out.println("[5] Sobra da divisão");
         System.out.println("");
 
         System.out.print("Digite sua resposta: ");
         int operacao = scanner.nextInt();
+        System.out.println("");
 
-        System.out.print("Didite o primeiro número para fazer o cálculo: ");
+        // Validação para o usuário não digitar algum número errado
+        for (boolean i = false; operacao < 0 || operacao > 5;){
+
+            System.out.println("Digite um número de 1 a 5!!");
+
+            System.out.print("Digite um número novamente: ");
+            operacao = scanner.nextInt();
+            System.out.println("");
+
+            if (operacao >= 1 || operacao <= 5){
+                i = true;
+            }
+        }
+
+
+        // perguntando os números para realizar o cálculo
+        System.out.print("Digite o primeiro número para fazer o cálculo: ");
         int n1 = scanner.nextInt();
-        System.out.print("Didite o primeiro número para fazer o cálculo: ");
+
+        System.out.print("Digite o segundo número para fazer o cálculo: ");
         int n2 = scanner.nextInt();
 
-        /*
-        if (operacao == 1){
-            int soma = Somar(n1, n2);
-            System.out.println("A Soma desses números é igual a " + soma);
-        } else if (operacao == 2){
-            int sub = Subtrair(n1, n2);
-            System.out.println("A Subtração desses números é igual a " + sub);
-        } else if (operacao == 3){
-            int mult = Multiplicar(n1, n2);
-            System.out.println("A multiplicação desses números é igual a " + mult);
-        } else if (operacao == 4){
-            int div = Dividir(n1, n2);
-            System.out.println("A Divisão desses números é igual a " + div);
-        }
-        */
+        mostrarCalculadora(operacao, n1, n2);
+
+        scanner.close();
+    }
+    public static void mostrarCalculadora(int operacao, int n1, int n2){
 
         switch (operacao){
             case 1:
-                System.out.println("A Soma desses números é igual a " + Somar(n1, n2));
+                System.out.println("A Soma desses números é igual a " + somar(n1, n2));
                 break;
             case 2:
-                System.out.println("A Soma desses números é igual a " + Subtrair(n1, n2));
+                System.out.println("A Subtração desses números é igual a " + subtrair(n1, n2));
                 break;
             case 3:
-                System.out.println("A Soma desses números é igual a " + Multiplicar(n1, n2));
+                System.out.println("A Multiplicação desses números é igual a " + multiplicar(n1, n2));
                 break;
             case 4:
-                System.out.println("A Soma desses números é igual a " + Dividir(n1, n2));
+                if (n2 == 0){
+                    System.out.println("Não é possível reakizar divisão com ZERO!!");
+                    break;
+                }
+                System.out.println("A Divisão desses números é igual a " + dividir(n1, n2));
+                break;
+
+            case 5:
+                if (n2 == 0){
+                    System.out.println("Não é possível reakizar divisão com ZERO!!");
+                    break;
+                }
+                System.out.println("A Sobra de " + n1 + " % " + n2 + " é = " + sobra(n1, n2));
                 break;
         }
     }
 
-    public static int Somar(int a, int b){
+    public static int somar(int a, int b){
         return a + b;
     }
 
-    public static int Subtrair(int a, int b){
+    public static int subtrair(int a, int b){
         return a - b;
     }
 
-    public static int Multiplicar(int a, int b){
+    public static int multiplicar(int a, int b){
         return a * b;
     }
-    public static int Dividir(int a, int b){
+    public static int dividir(int a, int b){
         return a / b;
     }
-
+    public static int sobra(int a, int b){
+        return a % b;
+    }
 }
