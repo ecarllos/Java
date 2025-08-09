@@ -28,6 +28,7 @@ public class a07_Metodos {
         System.out.print("Didite o primeiro número para fazer o cálculo: ");
         int n2 = scanner.nextInt();
 
+        /*
         if (operacao == 1){
             int soma = Somar(n1, n2);
             System.out.println("A Soma desses números é igual a " + soma);
@@ -41,17 +42,36 @@ public class a07_Metodos {
             int div = Dividir(n1, n2);
             System.out.println("A Divisão desses números é igual a " + div);
         }
+        */
+
+        switch (operacao){
+            case 1:
+                System.out.println("A Soma desses números é igual a " + Somar(n1, n2));
+                break;
+            case 2:
+                System.out.println("A Soma desses números é igual a " + Subtrair(n1, n2));
+                break;
+            case 3:
+                System.out.println("A Soma desses números é igual a " + Multiplicar(n1, n2));
+                break;
+            case 4:
+                System.out.println("A Soma desses números é igual a " + Dividir(n1, n2));
+                break;
+        }
     }
 
     public static int Somar(int a, int b){
         return a + b;
     }
+
     public static int Subtrair(int a, int b){
         return a - b;
     }
+
     public static int Multiplicar(int a, int b){
         return a * b;
-    }public static int Dividir(int a, int b){
+    }
+    public static int Dividir(int a, int b){
         return a / b;
     }
 
