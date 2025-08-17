@@ -1,9 +1,9 @@
 import java.awt.*;
 import java.util.Scanner;
 
-
-
 public class Ex1_GPT {
+    // Faça um Sistema bancário com as funções de Adicionar e Saque
+
     public static void main(String[] args) {
         funcao();
     }
