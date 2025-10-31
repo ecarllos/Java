@@ -43,24 +43,43 @@ public class a08_Array {
 
 
 
+        /*
+        // Pegue o nome de 5 pessoas e retorne-os
 
-        int[] array = new int[5];
+        String[] array = new String[5];
         int soma = 0;
 
-        for (int n : array){
-            soma += n;
+        for (int i = 0; i < array.length; i++){
+            System.out.print("digite um nome: ");
+            String n = scanner.next();
+
+            array[i] = n;
         }
 
-        System.out.println(soma);
+        System.out.println(Arrays.toString(array));
+        */
 
 
 
 
+        // Crie uma matriz 3x3 e mostre a soma de todos os elementos
 
+        /*
+        int soma = 0;
 
+        int[][] elements = {
+          {2, 7, 14},
+          {12, 9, 1}
+        };
 
-
-
+        for (int i = 0; i < elements.length; i++){
+            for (int j = 0; j < elements[i].length; j++){
+                soma += elements[i][j];
+                System.out.println(elements[i][j]);
+            }
+        }
+        System.out.println("a soma dessa matriz é " + soma);
+        */
 
 
         scanner.close();
